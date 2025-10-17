@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MyStore - Shop Smart</title>
+
+  <!-- TailwindCSS (CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+
+  <!-- Custom styles (overrides go here) -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Navbar -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-2xl font-bold text-blue-600">MyStore</h1>
+      <input id="search" placeholder="Search products..." class="border px-3 py-2 rounded w-1/3 focus:ring-2 focus:ring-blue-400 outline-none">
+      <nav>
+        <a href="cart.html" class="ml-4 text-blue-500 hover:text-blue-700 font-medium">🛒 Cart (<span id="cart-count">0</span>)</a>
+        <a href="admin.html" class="ml-4 text-gray-500 hover:text-blue-600 font-medium">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-center py-12">
+    <h2 class="text-4xl font-bold mb-3">Welcome to MyStore</h2>
+    <p class="text-lg">Find the best deals and latest trends at unbeatable prices</p>
+  </section>
+
+  <!-- Products -->
+  <main class="container mx-auto px-6 py-10">
+    <h3 class="text-2xl font-semibold mb-6 border-b-2 border-blue-500 inline-block pb-2">Shop Products</h3>
+    <div id="grid" class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"></div>
+  </main>
+
+  <footer class="bg-gray-800 text-white text-center py-4 mt-12">
+    <p>&copy; 2025 MyStore. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
